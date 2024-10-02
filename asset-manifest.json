@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5cddb072.css",
+    "main.js": "/static/js/main.7454b7f0.js",
+    "static/media/logo.png": "/static/media/logo.057b303f099de8e1a2c5.png",
+    "static/media/photo_2024-07-31_21-37-57.jpg": "/static/media/photo_2024-07-31_21-37-57.ab3c2a089984be5ee195.jpg",
+    "static/media/photo_2024-08-02_17-55-04.jpg": "/static/media/photo_2024-08-02_17-55-04.20d53dcc46f3b693ffd3.jpg",
+    "static/media/photo_2024-08-02_17-55-02.jpg": "/static/media/photo_2024-08-02_17-55-02.78601417938d56692642.jpg",
+    "static/media/photo_2024-07-19_15-24-07.jpg": "/static/media/photo_2024-07-19_15-24-07.f64ebecb83eea8de6fda.jpg",
+    "static/media/photo_2024-07-19_15-24-10.jpg": "/static/media/photo_2024-07-19_15-24-10.498454ed2a31a159ccfb.jpg",
+    "static/media/photo_2024-08-02_17-55-01.jpg": "/static/media/photo_2024-08-02_17-55-01.b139a03fa6974db8d254.jpg",
+    "static/media/photo_2024-07-19_15-24-09.jpg": "/static/media/photo_2024-07-19_15-24-09.06687f8105c099940c09.jpg",
+    "static/media/frontier.jpg": "/static/media/frontier.7bcb94e5df2b9508fd16.jpg",
+    "static/media/photo_2024-07-19_15-24-12.jpg": "/static/media/photo_2024-07-19_15-24-12.c53caf4c50de7451a75f.jpg",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
+    "static/media/repeat.png": "/static/media/repeat.80812e5bd1a74ac9210c.png",
+    "static/media/you robot.jpg": "/static/media/you robot.db281f5b40a3de8e4573.jpg",
+    "static/media/conspiracy.jpg": "/static/media/conspiracy.62d452f50af0f1ec02b1.jpg",
+    "static/media/heist.jpg": "/static/media/heist.8687749bf51cb7f7e872.jpg",
+    "static/media/underground.jpg": "/static/media/underground.51567b755b0af54b8e28.jpg",
+    "static/media/banner 1.jpg": "/static/media/banner 1.51005f77c2910d24ec7f.jpg",
+    "static/media/forest.jpg": "/static/media/forest.c0765fca722964a9ae7d.jpg",
+    "index.html": "/index.html",
+    "main.5cddb072.css.map": "/static/css/main.5cddb072.css.map",
+    "main.7454b7f0.js.map": "/static/js/main.7454b7f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cddb072.css",
+    "static/js/main.7454b7f0.js"
+  ]
+}
