@@ -17,12 +17,16 @@ export default function Header(props) {
       </div>
       {
         props.isOnMobile ?
-          <button className="header__button"/>
+          <button className="header__button"
+            onClick={() => props.setMenuOpen(!props.isMenuOpen)}
+          />
         :
           <nav className="header__links">
           {
             texts.links.map((link, i) => 
-              <NavLink className="header__link" to={link.url} key={`link-${i}`}>
+              <NavLink className="header__link"
+                to={link.url} key={`link-${i}`}
+              >
                 {link.text}
               </NavLink>
             )

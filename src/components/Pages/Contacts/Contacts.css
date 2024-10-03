@@ -17,3 +17,10 @@
 .contacts__name {
   font-weight: 500;
 }
+
+@media screen and (max-width: 600px) {
+  .contacts {
+    margin-top: 80px;
+    padding: 60px 30px 60px;
+  }
+}

@@ -5,8 +5,8 @@
 
 .events__cards {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -22,4 +22,12 @@
 .events__city {
   font-weight: 400;
   margin-right: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .events {
+    margin-top: 80px;
+    padding: 60px 30px 60px;
+  }
 }
