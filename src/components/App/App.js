@@ -12,6 +12,7 @@ import { dndCards, gameCards, nearestGames } from "../../utils/gameCards";
 import Events from '../Pages/Events/Events';
 import Contacts from '../Pages/Contacts/Contacts';
 import { contacts } from '../../utils/contacts';
+import MobileMenu from '../MobileMenu/MobileMenu';
 
 function App() {
   //#region Methods
@@ -26,6 +27,7 @@ function App() {
 
   const [lang, setLang] = useState("ru");
   const [isOnMobile, setMobile] = useState(window.innerWidth <= 600);
+  const [isMenuOpen, setMenuOpen] = useState(true);
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
@@ -40,6 +42,8 @@ function App() {
         <Header
           texts={texts[lang].header}
           isOnMobile={isOnMobile}
+          isMenuOpen={isMenuOpen}
+          setMenuOpen={setMenuOpen}
         />
         <Routes>
           <Route path='/games' element={
@@ -82,6 +86,11 @@ function App() {
             />}
           />
         </Routes>
+        <MobileMenu
+          setMenuOpen={setMenuOpen}
+          isMenuOpen={isMenuOpen}
+          texts={texts[lang].header}
+        />
       </LanguageContext.Provider>
       <Footer/>
     </div>
