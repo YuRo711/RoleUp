@@ -8,20 +8,27 @@ export default function Header(props) {
 
   return (
     <header className="header">
-      <img className="header__logo"
-        src={logo}
-        alt="roleup logo"
-      />
-      <h2 className="header__logo-title">RoleUp</h2>
-      <nav className="header__links">
+      <div className="header__logo-container">
+        <img className="header__logo"
+          src={logo}
+          alt="roleup logo"
+        />
+        <h2 className="header__logo-title">RoleUp</h2>
+      </div>
       {
-        texts.links.map((link, i) => 
-          <NavLink className="header__link" to={link.url} key={`link-${i}`}>
-            {link.text}
-          </NavLink>
-        )
+        props.isOnMobile ?
+          <button className="header__button"/>
+        :
+          <nav className="header__links">
+          {
+            texts.links.map((link, i) => 
+              <NavLink className="header__link" to={link.url} key={`link-${i}`}>
+                {link.text}
+              </NavLink>
+            )
+          }
+          </nav>
       }
-      </nav>
     </header>
   );
 }

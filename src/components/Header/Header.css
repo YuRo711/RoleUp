@@ -12,8 +12,14 @@
   color: #FFF;
 }
 
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .header__logo {
-  max-height: 100%;
+  max-height: 70px;
 }
 
 .header__logo-title {
@@ -32,4 +38,27 @@
   text-decoration: none;
   color: #FFF;
   font-size: 18px;
+}
+
+.header__button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  background-image: url('../../images/menu\ white.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: row-reverse;
+    padding: 10px 30px;
+    justify-content: space-between;
+  }
+
+  .header__logo-title {
+    margin-left: auto;
+  }
 }
