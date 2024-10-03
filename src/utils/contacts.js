@@ -5,7 +5,7 @@ export const contacts = [
   },
   {
     title: "Email",
-    contact: "karpsy711@gmail.com"
+    contact: "roleupisrael@gmail.com"
   },
   {
     title: "Facebook",
