@@ -27,7 +27,7 @@ function App() {
 
   const [lang, setLang] = useState("ru");
   const [isOnMobile, setMobile] = useState(window.innerWidth <= 600);
-  const [isMenuOpen, setMenuOpen] = useState(true);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
