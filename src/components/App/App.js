@@ -4,7 +4,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { texts } from '../../utils/texts';
 import { images } from '../../utils/gallery';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Main from '../Pages/Main/Main';
 import Footer from '../Footer/Footer';
 import Games from '../Pages/Games/Games';
@@ -34,7 +34,12 @@ function App() {
     return () => {
         window.removeEventListener('resize', handleWindowSizeChange);
     }
-}, []);
+  }, []);
+
+  const location = useLocation();
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
 
   return (
     <div className="page">
