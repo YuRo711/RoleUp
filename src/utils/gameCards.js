@@ -4,6 +4,11 @@ import conspiracy from "../images/conspiracy.jpg";
 import forest from "../images/forest.jpg";
 import heist from "../images/heist.jpg";
 import underground from "../images/underground.jpg";
+import carnival from "../images/carnival.jpg";
+import plague from "../images/plague.jpg";
+import gods from "../images/gods.jpg";
+import clerics from "../images/clerics.jpg";
+import runaways from "../images/runaways.jpg";
 import { type } from "@testing-library/user-event/dist/type";
 
 export const gameCards = {
@@ -48,6 +53,36 @@ export const dndCards = {
       text: "Тысячелетний барьер в Подземье вновь открыт. Лишь ваша команда храбрецов может остановить орды чудовищ и найти стоящего за ними Подземного Короля!",
       image: underground,
       repeat: false,
+    },
+    {
+      title: "Карнавал в жёлтых тонах (D&D-ваншот)",
+      text: "На праздник осеннего карнавала приехал цирк из далёких земель! Но почему с их приездом в городе начинаются странные события?",
+      image: carnival,
+      repeat: true,
+    },
+    {
+      title: "Чумной лес (D&D-ваншот)",
+      text: "Жителей деревни и лесных обитателей поражает магическая болезнь. Рискните ступить в чащу леса и раскройте, кто за этим стоит!",
+      image: plague,
+      repeat: true,
+    },
+    {
+      title: "Пантеон (D&D-ваншот)",
+      text: "Старые боги пали с небес. Ваши герои, некогда почитаемые смертными, теперь сами заключены в смертных телах. Верните славу поверженному пантеону!",
+      image: gods,
+      repeat: true,
+    },
+    {
+      title: "Беглецы (D&D-кампания)",
+      text: "Кампания для фанатов подростковых антиутопий. Группа подростков с магическими способностями сбегает из интерната и осознаёт, что мир совсем не такой, как им говорили.",
+      image: runaways,
+      repeat: false,
+    },
+    {
+      title: "За дверями храма (D&D-ваншот)",
+      text: "Заходят как-то в таверну... Нет, не так. Сегодня команде жрецов разных богов придётся оставить все разногласия и объединиться против общей угрозы!",
+      image: clerics,
+      repeat: true,
     },
   ]
 };
