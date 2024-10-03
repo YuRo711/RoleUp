@@ -9,8 +9,8 @@ export default function Events(props) {
       <h1 className="main__title">{texts.title}</h1>
       <div className="events__cards">
       {
-        events.map((event) => (
-          <div className="events__event">
+        events.map((event, i) => (
+          <div className="events__event" key={`event-${i}`}>
             <h2 className="events__date">{event.date}
             <span className="events__city">{event.city[lang]}</span>
             </h2>

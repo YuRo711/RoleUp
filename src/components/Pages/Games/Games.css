@@ -5,8 +5,8 @@
 
 .games__cards {
   margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -88,4 +88,13 @@
 
 .games__repeat-image:hover ~ .games__repeat-text {
   display: block;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .games {
+    margin-top: 80px;
+    padding: 60px 30px 60px;
+  }
 }
