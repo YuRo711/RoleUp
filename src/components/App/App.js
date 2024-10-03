@@ -1,7 +1,7 @@
 import Header from '../Header/Header';
 import { LanguageContext } from "../../contexts/LanguageContext";
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { texts } from '../../utils/texts';
 import { images } from '../../utils/gallery';
 import { Route, Routes } from 'react-router-dom';
@@ -14,13 +14,32 @@ import Contacts from '../Pages/Contacts/Contacts';
 import { contacts } from '../../utils/contacts';
 
 function App() {
+  //#region Methods
+
+  function handleWindowSizeChange()
+  {
+    setMobile(window.innerWidth <= 600);
+  }
+
+  //#endregion
+
+
   const [lang, setLang] = useState("ru");
+  const [isOnMobile, setMobile] = useState(window.innerWidth <= 600);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+}, []);
 
   return (
     <div className="page">
       <LanguageContext.Provider value={{lang, setLang}}>
         <Header
           texts={texts[lang].header}
+          isOnMobile={isOnMobile}
         />
         <Routes>
           <Route path='/games' element={

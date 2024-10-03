@@ -11,8 +11,8 @@ export default function Main(props) {
         <h2 className="main__title">{texts.about}</h2>
         <div className="main__faq">
           {
-            texts.questions.map((q) => 
-              <div className="main__question">
+            texts.questions.map((q, i) => 
+              <div className="main__question" key={`question-${i}`}>
                 <h3 className="main__question-title">{q.question}</h3>
                 <p className="main__answer">{q.answer}</p>
               </div>
@@ -22,8 +22,8 @@ export default function Main(props) {
       </section>
       <section className="main__photos">
         {
-          images.map((image) => 
-            <div className="main__image-container">
+          images.map((image, i) => 
+            <div className="main__image-container" key={`image-${i}`}>
               <img className="main__image"
                 src={image}
               />
@@ -35,8 +35,8 @@ export default function Main(props) {
         <h2 className="main__title">{texts.dnd}</h2>
         <div className="main__faq">
           {
-            texts.dndQuestions.map((q) => 
-              <div className="main__question">
+            texts.dndQuestions.map((q, i) => 
+              <div className="main__question" key={`dnd-${i}`}>
                 <h3 className="main__question-title">{q.question}</h3>
                 <p className="main__answer">{q.answer}</p>
               </div>
